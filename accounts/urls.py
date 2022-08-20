@@ -1,12 +1,10 @@
 from django.urls import path
-from . import views
-
-
+from .views import SingUpView
 # from django.conf import settings
 
 
 urlpatterns = [
-    path("signup/", views.register_request, name="signup"),
+     path("signup/", SingUpView.as_view(), name="signup"),
     
 
 ]

@@ -48,8 +48,10 @@
 
                     {% if request.user.is_authenticated %}
                     <li><a class="nav-link " href="{% url 'logout' %}"><strong>Logout</strong></a></li>
+                    <li><a class="nav-link " href="{% url 'password_change' %}"><strong>Change password</strong></a>
+                    </li>
                     {% else %}
-                    <li><a class="nav-link " href="{% url 'signup' %}"><strong>signup</strong></a></li>
+                    <li><a class="nav-link " href="{% url 'signup' %}"><strong>Signup</strong></a></li>
                     <li><a class="nav-link " href="{% url 'login' %}"><strong>Login</strong></a></li>
                     <li><a class="nav-link " href="{% url 'password_reset' %}"><strong>Reset password</strong></a></li>
                     {% endif %}
