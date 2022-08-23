@@ -1,0 +1,13 @@
+<!-- mover a carpeta templates/pages -->
+
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<h1>Home</h1>
+<p>Welcome to the home page!</p>
+<div>
+    {{weather|safe }}
+</div>
+{% endblock content %}
